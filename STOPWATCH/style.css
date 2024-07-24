@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(#00ff2a 0%, #08e57e 35%, #00d0ff 100%);
+}
+h1{
+    width: 100%;
+    color:white;
+    font-size:50px;
+    text-align: center;
+    padding: 20px 0; 
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+.container {
+    text-align: center;
+}
+
+.stopwatch {
+    display: inline-block;
+}
+
+.outer-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:  15px;
+}
+
+.inner-circle {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background: linear-gradient(#08e560 0%, #08e560 35%, rgb(0, 255, 234) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    font-size: 23px;
+}
+.minute{
+    font-size: 43px;
+}
+.sec{
+    font-size: 43px;
+}
+.msec{
+    font-size: 43px;
+}
+
+.button-wrapper {
+    width: 230px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+
+}
+
+.button {
+    width: 70px;
+    height: 50px;
+    border-radius: 30%;
+    border: 2px solid white;
+    background-color: transparent; 
+    cursor: pointer;
+    color: white;
+    margin: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+button:hover{
+    background-color: rgba(204, 204, 204, 0.5); 
+    color: #08e5e5;
+}
+
+
+
+.laps{
+    list-style: none;
+    color: white;
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    position: relative;
+    padding: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+}
+.laps::-webkit-scrollbar{
+    display: none;
+
+}
+
+.lap-item{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: top;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.number{
+    color: #fff;
+}
+
+.time-stamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.lap-clear-button{
+    
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 200px;
+    width: 100px;
+    padding: 15px 0;
+    border-radius: 50px;
+    background-color: rgba(red, green, blue, alpha);
+    color: white;
+    border: 1px solid white;
+    transform: translate(-50%);
+    margin-left: 379px;
+    font-size: large;
+}
+
+.hidden{
+    visibility: hidden;
+}
